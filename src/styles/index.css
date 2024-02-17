@@ -1,0 +1,157 @@
+@import url("./fonts.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --border-radius: 10px;
+  --color-secondary: #9c9c9c;
+  --color-primary: #219f95;
+  --color-badge: #afcedd;
+  --color-badge-text: #1b4090;
+  --color-head: #4c6aa8;
+}
+
+body,
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+}
+.badge {
+  background-color: var(--color-badge);
+  color: var(--color-badge-text);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+}
+
+.requests-section h1 {
+  margin: 10rem 1rem;
+}
+
+.requests {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4.5rem 3.5rem;
+}
+
+.request-item {
+}
+
+.request-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.request-head-right {
+  font-size: 2rem;
+  color: var(--color-head);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.request-head-left {
+  font-size: 1rem;
+  color: var(--color-head);
+  color: var(--color-secondary);
+}
+
+.request-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem;
+}
+
+.request-body p {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.request-avatar {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .requests {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .requests {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
